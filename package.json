@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Bienvenue sur la page Github du site de la streameuse la plus drôle du Twitch game ❤️",
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel serve",
+    "prebuild": "shx rm -rf dist/*",
     "build": "parcel build"
   },
   "repository": {
@@ -20,7 +22,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.8.2",
-    "react-router-dom": "^6.8.2"
+    "react-router-dom": "^6.8.2",
+    "shx": "^0.3.4"
   },
   "devDependencies": {
     "@parcel/transformer-typescript-tsc": "^2.8.3",
